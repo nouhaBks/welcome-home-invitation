@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>You're Invited! 💌</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- STAGE 1: ENVELOPE -->
+  <section id="envelopeScreen" class="screen">
+    <p class="top-text">A LITTLE SURPRISE FOR YOU ♡</p>
+
+    <button class="envelope" id="openEnvelope"
+            aria-label="Open your invitation">
+      <div class="envelope-back"></div>
+      <div class="envelope-letter">
+        <span>You're invited!</span>
+        <small>with love ♡</small>
+      </div>
+      <div class="envelope-flap"></div>
+      <div class="envelope-front"></div>
+      <div class="heart-seal">♥</div>
+    </button>
+
+    <p class="tap-text">Tap the heart to open your invitation 💌</p>
+  </section>
+
+  <!-- STAGE 2: INVITATION -->
+  <section id="invitationScreen" class="screen hidden">
+    <div class="invitation-card">
+
+      <div class="bow">୨୧</div>
+      <p class="eyebrow">A SPECIAL INVITATION</p>
+
+      <h1>Welcome <span>Home</span></h1>
+
+      <p class="subtitle">
+        A little gathering, a lot of love ♡
+      </p>
+
+      <div class="separator">♡ ✿ ♡</div>
+
+      <p class="dear">Dear</p>
+      <h2 class="guests">
+        Chaima Hammouda
+        <span>&</span>
+        Sarra Ben Aicha
+      </h2>
+
+      <p class="message">
+        You're officially invited to a sweet girly
+        afternoon filled with laughter, gossip,
+        snacks, and unforgettable memories!
+        <br><br>
+        Because everything is better together. 💕
+      </p>
+
+      <div class="event-details">
+        <div class="detail">
+          <div class="detail-icon">✿</div>
+          <strong>Friday</strong>
+          <span>October 23, 2026</span>
+        </div>
+
+        <div class="detail">
+          <div class="detail-icon">♡</div>
+          <strong>3:00 PM</strong>
+          <span>Afternoon gathering</span>
+        </div>
+      </div>
+
+
+<div class="location">
+  <p>📍 Nouha's Home</p>
+  <a
+    href="https://maps.app.goo.gl/YpUvg67R5ed4Pjth8?g_st=ic"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="location-btn"
+  >
+    🗺️ Get Directions 💗
+  </a>
+</div>
+
+      <div class="question-area">
+        <h2>Will you come? 💗</h2>
+        <p>Choose wisely, bestie...</p>
+
+        <div class="button-playground" id="playground">
+          <button id="yesBtn" class="yes-btn">
+            YES! 💗
+          </button>
+
+          <button id="noBtn" class="no-btn">
+            NO 🙄
+          </button>
+        </div>
+      </div>
+
+      <p class="signature">XOXO, Nouha Boukhris ♡</p>
+    </div>
+  </section>
+
+  <!-- STAGE 3: CELEBRATION -->
+  <section id="celebrationScreen" class="screen hidden">
+    <div class="celebration-card">
+      <div class="big-heart">💖</div>
+      <h1>YAAAY!</h1>
+      <h2>I knew you'd say YES!</h2>
+      <p>
+        Get ready for the cutest afternoon ever!
+        <br>
+        See you on Friday, October 23 at 3 PM! 🎀
+      </p>
+      <p class="signature">Love you! — Nouha ♡</p>
+      <button id="replayBtn" class="yes-btn">
+        Open Invitation Again 💌
+      </button>
+    </div>
+  </section>
+
+  <div id="confettiContainer" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
